@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: uni_sys
+
+  datasource:
+    url:
+      jdbc:mysql://localhost:3306/unisys?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 6000
